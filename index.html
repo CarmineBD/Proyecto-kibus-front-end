@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body onload="changeBackground()" onresize="refreshBackground()">
+    <main class="container d-flex flex-column align-items-center">
+      <div class="background"></div>
+
+      <!-- SECCIÓN 1 -->
+
+      <section class="container-fluid mt-5">
+        <!-- LOGO  -->
+
+        <div class="logo">
+          <figure>
+            <img src="img/icons/logo-1.svg" alt="" />
+          </figure>
+        </div>
+
+        <div class="row d-flex align-items-center">
+          <!-- TITULO Y DESCRIPCIÓN -->
+          <div class="order-2 order-lg-1 col-lg-6 mt-5 mt-lg-0">
+            <h1 class="mb-4 mt-4">
+              Alimentar bien a tu perro es más fácil que nunca
+            </h1>
+            <div class="mb-4 text-style-2">
+              La nueva alimentación canina ha llegado. Con Kibus, podrás ofrecer
+              a tu compañero comida sana, rica y recién cocinada de una forma
+              fácil y cómoda
+            </div>
+            <!-- Botones -->
+            <div class="row d-flex">
+              <button class="col-12 btn btn-primary mb-3 mb-md-0 col-md-5">
+                Reserva Ahora
+              </button>
+              <button class="col-12 btn btn-secondary col-md-5 ms-md-3">
+                Quiero Saber Más
+                <figure class="m-0">
+                  <img
+                    src="img/icons/Arrow - Right Circle.svg"
+                    alt=""
+                    title=""
+                    class="d-flex align-items-center"
+                  />
+                </figure>
+              </button>
+            </div>
+          </div>
+
+          <!-- IMÁGEN PRINCIPAL -->
+          <figure
+            class="mb-lg-0 principal order-1 order-lg-2 position-relative col-lg-6 mb-5"
+          >
+            <img
+              src="img/icons/Ellipse9.svg"
+              alt=""
+              class="position-absolute"
+              id="eclipse1"
+            />
+            <img src="img/111-Kibus-0160.png" alt="" title="" class="mask1" />
+          </figure>
+        </div>
+
+        <!-- CARROUSEL DE COMIDAS -->
+        <div class="scroll d-flex text-center">
+          <article class="alimento d-flex flex-column">
+            <figure>
+              <img src="img\Kibus-receta-1.png" alt="" title="" />
+            </figure>
+            <span class="text-style-3 mb-4">Pollo y pimiento</span>
+            <span class="text-style-4"
+              >Energética, con ingredientes antioxidantes</span
+            >
+          </article>
+
+          <article class="alimento d-flex flex-column">
+            <figure>
+              <img src="img\Kibus-receta-2.png" alt="" title="" />
+            </figure>
+            <span class="text-style-3 mb-4">Salmón y Arroz</span>
+            <span class="text-style-4">Ipoalergénica, con Omega 3 y 6</span>
+          </article>
+
+          <article class="alimento d-flex flex-column">
+            <figure>
+              <img src="img\Kibus-receta-3.png" alt="" title="" />
+            </figure>
+            <span class="text-style-3 mb-4">Cerdo y Calabaza</span>
+            <span class="text-style-4"
+              >para dar vitalidad buena para el sistema inmune</span
+            >
+          </article>
+
+          <article class="alimento d-flex flex-column align-items-center">
+            <figure>
+              <img src="img\Kibus-receta-4.png" alt="" title="" />
+            </figure>
+            <div>
+              <button class="btn btn-primary mb-4">
+                Tu Receta
+                <figure class="m-0">
+                  <img src="img/icons/arrow.svg" alt="" title="" />
+                </figure>
+              </button>
+            </div>
+            <span class="text-style-4"
+              >Ayúdanos a decidir nuestra nueva receta</span
+            >
+          </article>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 2 -->
+
+      <section
+        class="row container-fluid d-flex justify-content-center align-items-center"
+      >
+        <!-- CARROUSEL DE IMAGENES -->
+        <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+          <!-- <figure class="position-absolute">
+            <img src="img/icons/Ellipse9.svg" alt="" id="eclipse2" />
+          </figure> -->
+          <div class="container">
+            <br />
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#myCarousel"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <div></div>
+                </div>
+
+                <div class="item">
+                  <div></div>
+                </div>
+
+                <div class="item">
+                  <div></div>
+                </div>
+
+                <div class="item">
+                  <div></div>
+                </div>
+              </div>
+
+              <!-- Left and right controls -->
+              <a
+                class="left carousel-control"
+                href="#myCarousel"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="glyphicon glyphicon-chevron-left"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="right carousel-control"
+                href="#myCarousel"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="glyphicon glyphicon-chevron-right"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- TEXTO -->
+        <div class="col-12 col-lg-6 ps-0 ps-lg-5">
+          <h2><b>Mejor para ellos, más fácil y cómodo para ti</b></h2>
+          <span class="mt-4"
+            >Con Kibus, nunca tendrás que preocuparte de cómo ofrecer una dieta
+            sana y natural a tu perro de forma cómoda y rápida. Nuestro
+            dispositivo cocina automáticamente la cantidad exacta en cada comida
+            e incluso lo puedes programar a través de la app. Tu perro
+            disfrutará comida de casera de primera calidad, con el mínimo
+            esfuerzo.</span
+          >
+
+          <!-- Botones -->
+          <div class="row d-flex mt-4">
+            <button class="col-12 btn btn-primary col-md-5">
+              Reservar Ahora
+            </button>
+            <button
+              class="col-12 btn btn-primary mt-3 col-md-6 ms-0 ms-md-3 mt-md-0"
+            >
+              Quiero Saber Más
+              <figure class="m-0">
+                <img src="img/icons/Arrow - Right Circle.svg" alt="" title="" />
+              </figure>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 3 -->
+
+      <section class="row container d-flex align-items-center">
+        <!-- IMAGEN DE LA DERECHA -->
+        <figure class="col-md-6 order-md-2 position-relative">
+          <img src="img\image 13.png" alt="" title="" class="" />
+          <img
+            id="movil"
+            src="img\image 15.png"
+            alt=""
+            title=""
+            class="position-absolute"
+          />
+        </figure>
+
+        <!-- ARTICULOS CON ICONOS -->
+        <div class="row col-md-6 order-md-1">
+          <article class="col-6 col-md-12 mb-4 d-flex align-items-center">
+            <figure class="me-3">
+              <img
+                src="img/icons/programable icon.svg"
+                alt=""
+                title=""
+                class=""
+              />
+            </figure>
+            <span class="text-style-7">Programmable 24h</span>
+          </article>
+          <article class="col-6 col-md-12 mb-4 d-flex align-items-center">
+            <figure class="me-3">
+              <img
+                src="img/icons/Agua siempre disponible.svg"
+                alt=""
+                title=""
+              />
+            </figure>
+            <span class="text-style-7">Agua siempre disponible</span>
+          </article>
+          <article class="col-6 col-md-12 mb-4 d-flex align-items-center">
+            <figure class="me-3">
+              <img
+                src="img/icons/cantidad personalizable.svg"
+                alt=""
+                title=""
+              />
+            </figure>
+            <span class="text-style-7">Cantidad personalizable</span>
+          </article>
+          <article class="col-6 col-md-12 mb-4 d-flex align-items-center">
+            <figure class="me-3">
+              <img src="img/icons/function.svg" alt="" title="" />
+            </figure>
+            <span class="text-style-7">Historial de las comidas</span>
+          </article>
+          <article class="col-6 col-md-12 mb-4 d-flex align-items-center">
+            <figure class="me-3">
+              <img src="img/icons/Fácil de usar y lavar.svg" alt="" title="" />
+            </figure>
+            <span class="text-style-7">Fácil de usar y lavar</span>
+          </article>
+          <article class="col-6 col-md-12 mb-4 d-flex align-items-center">
+            <figure class="me-3">
+              <img src="img/icons/App para iOS y Android.svg" alt="" title="" />
+            </figure>
+            <span class="text-style-7">App para iOS y Android</span>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="bg-secondary text-white pt-5 d-flex flex-column">
+      <div>
+        <figure class="logo2 logo ms-4">
+          <img src="img/icons/KIBUS LOGO, COLOUR + ELEMENTS-08 1.svg" alt="" />
+        </figure>
+      </div>
+
+      <!-- COLUMNAS -->
+
+      <div class="row px-4 pb-5 pb-md-0 d-fle">
+        <!-- COLUMNA FOOTER 1 -->
+        <div class="col-12 col-md-3 mt-3 mt-md-0">
+          <span class="text-style-8">Sobre KIBUS</span><br />
+          <span class="text-style-9"
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation.</span
+          >
+        </div>
+
+        <!-- COLUMNA FOOTER 2 -->
+        <div class="col-12 col-md-3 mt-3 mt-md-0 d-flex justify-content-center">
+          <div>
+            <span class="text-style-8">Políticas</span><br />
+            <a href="#">Políticas de Privacidad</a><br />
+            <a href="#">Condiciones de uso</a><br />
+            <a href="#">Cookies</a><br />
+            <a href="#">FAQ</a><br />
+          </div>
+        </div>
+
+        <!-- COLUMNA FOOTER 3 -->
+        <div
+          class="col-12 col-md-3 d-flex d-flex justify-content-start mt-3 mt-md-0 justify-content-md-center"
+        >
+          <a href="#"
+            ><figure class="me-4">
+              <img src="img/icons/Vector.svg" alt="" title="" /></figure
+          ></a>
+          <a href="#"
+            ><figure class="me-4">
+              <img src="img/icons/instagram.svg" alt="" title="" /></figure
+          ></a>
+          <a href="#"
+            ><figure><img src="img/icons/youtube.svg" alt="" title="" /></figure
+          ></a>
+        </div>
+
+        <!-- COLUMNA FOOTER 4 -->
+        <div class="col-12 col-md-3 mt-3 mt-md-0 d-flex justify-content-center">
+          <div>
+            <span class="text-style-8">Métodos de pago</span>
+            <div class="d-flex">
+              <figure class="metodo-pago">
+                <img src="img/icons/Master_Card.svg" alt="" title="" />
+              </figure>
+              <figure class="metodo-pago">
+                <img src="img/icons/Visa.svg" alt="" title="" />
+              </figure>
+              <figure class="metodo-pago">
+                <img src="img/icons/apple play.svg" alt="" title="" />
+              </figure>
+              <figure class="metodo-pago">
+                <img src="img/icons/google pay.svg" alt="" title="" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
